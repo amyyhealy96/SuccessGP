@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="question_size">16sp</dimen>
+    <dimen name="java_answer_size">10sp</dimen>
+    <dimen name="indeterminate_progress_size">32dp</dimen>
+    <dimen name="padding_question_linear_layout">6dp</dimen>
+    <dimen name="card_view_corner_radius">2dp</dimen>
+    <dimen name="card_view_margin">6dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

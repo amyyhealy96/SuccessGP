@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahealy.successgp.Quiz">
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+
+
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/futurefore"
+            android:scaleType="fitXY" />
+
+
+        <com.kofigyan.stateprogressbar.StateProgressBar
+            android:id="@+id/state_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:spb_currentStateNumber="three"
+            app:spb_maxStateNumber="four"
+            app:spb_animateToCurrentProgressState="true"
+            app:spb_checkStateCompleted="true"
+            app:spb_stateBackgroundColor="#c8e6ff"
+            app:spb_stateForegroundColor="#28a2ff"
+            app:spb_stateNumberBackgroundColor="#516176"
+            app:spb_stateNumberForegroundColor="#eeeeee"
+            app:spb_currentStateDescriptionColor="#287aff"
+            app:spb_stateDescriptionColor="#516176" />
+        />
+
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/introduction"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/question_size"
+                app:fontFamily="@font/sintony" />
+
+
+        </LinearLayout>
+
+
+        <!-- Question 1 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/question_size" />
+                <CheckBox
+                    android:id="@+id/question1Answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1_answer1" />
+                <CheckBox
+                    android:id="@+id/question1Answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1_answer2" />
+                <CheckBox
+                    android:id="@+id/question1Answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1_answer3" />
+                <CheckBox
+                    android:id="@+id/question1Answer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1_answer4" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 2 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/question_size" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/question2Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question2_answer1" />
+                    <RadioButton
+                        android:id="@+id/question2Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question2_answer2" />
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 3 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question3"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/question_size" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/question3Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question3_answer1" />
+                    <RadioButton
+                        android:id="@+id/question3Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question3_answer2" />
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 4 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question4"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/question_size" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/question4Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question4_answer1" />
+                    <RadioButton
+                        android:id="@+id/question4Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question4_answer2" />
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 5 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question5"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/question_size" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/question5Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question5_answer1" />
+                    <RadioButton
+                        android:id="@+id/question5Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question5_answer2" />
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 6 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question6">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question6"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/question_size" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/question6Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question6_answer1" />
+                    <RadioButton
+                        android:id="@+id/question6Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question6_answer2" />
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 7 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question7">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question7"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/question_size" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/question7Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question7_answer1" />
+                    <RadioButton
+                        android:id="@+id/question7Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question7_answer2" />
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 8 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"
+            android:id="@+id/card_view_question8">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/question8"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/question_size" />
+                <CheckBox
+                    android:id="@+id/question8Answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question8_answer1" />
+                <CheckBox
+                    android:id="@+id/question8Answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question8_answer2" />
+                <CheckBox
+                    android:id="@+id/question8Answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question8_answer3" />
+                <CheckBox
+                    android:id="@+id/question8Answer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question8_answer4" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Question 9 -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            style="@style/cardViewQuestion"></android.support.v7.widget.CardView>
+
+
+        <!-- Results -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_view_margin"
+            card_view:cardCornerRadius="@dimen/card_view_corner_radius">
+            <LinearLayout
+                android:id="@+id/results_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_question_linear_layout">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@android:style/Widget.DeviceDefault.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/background_light"
+                    android:text="Submit"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/nav_apply"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/current_step_default"
+            app:background="@color/questionColorDark"
+            app:itemBackground="@color/current_step_default"
+            app:itemIconTint="@color/colorPrimary"
+            app:itemTextColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_navigation" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
+
+
+
+
+

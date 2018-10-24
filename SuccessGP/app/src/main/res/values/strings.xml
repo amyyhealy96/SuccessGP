@@ -1,0 +1,55 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Success Graduate Program</string>
+    <string name="question1">I have a passion for programming? (OOP, JavaScript, Java, SQL, HTML, etc...)</string>
+    <string name="question1_answer1">Absolutely, I have a very technical background person</string>
+    <string name="question1_answer2">No, my passion lies within problem solving within a business </string>
+    <string name="question1_answer3">I prefer more creative opportunities</string>
+    <string name="question1_answer4">Reflecting on memories</string>
+    <string name="question2">I can see myself in a client facing role and giving frequent presentations</string>
+    <string name="question2_answer1">True</string>
+    <string name="question2_answer2">False</string>
+    <string name="question3">I have valuable experience when it comes to defining, designing, and developing video solutions for business problems </string>
+    <string name="question3_answer1">True</string>
+    <string name="question3_answer2">False</string>
+    <string name="question4">I have a technical affinity yet also enjoy problem solving:</string>
+    <string name="question4_answer1">Agree</string>
+    <string name="question4_answer2">Disagree</string>
+    <string name="question5">I feel comfortable being alone and like things I can do on my own:</string>
+    <string name="question5_answer1">Agree</string>
+    <string name="question5_answer2">Disagree</string>
+    <string name="question6">I love cutting-edge video curation using technologies such as Adobe Creative Suite, Adobe Premier Pro and After Effects. </string>
+    <string name="question6_answer1">True</string>
+    <string name="question6_answer2">False</string>
+    <string name="question7">I have a strong ability about understanding a customers needs</string>
+    <string name="question7_answer1">True</string>
+    <string name="question7_answer2">False</string>
+    <string name="question8">Choose the words that best describe you (Choose all that apply):</string>
+    <string name="question8_answer1">Communicative</string>
+    <string name="question8_answer2">Analytical</string>
+    <string name="question8_answer3">Friendly</string>
+    <string name="question8_answer4">Reserved</string>
+    <string name="submit_button">Submit</string>
+
+    <string name="score">Your score: <xliff:g example="2" id="score">%d</xliff:g></string>
+    <string name="initialScore">Your score: </string>
+    <string name="initialResult">You are: </string>
+    <string name="result">You are: <xliff:g example="ambivert" id="result">%s</xliff:g></string>
+    <string name="coreSE">You would love our Solution Engineering role</string>
+    <string name="demoEng">You would love our Demo Engineering role</string>
+    <string name="videoEditor">You would love our Video Editor opportunitity</string>
+    <string name="introduction">Complete the quiz below in order to find out what role we think could be best for you! Click submit once you finish and leave the rest to us.</string>
+    <string name="learn_more">For more on our Success Graduate Program, click the link below</string>
+    <string name="more_info">More Info</string>
+    <string name="user_note">Note: this is not a scientifically validated tool!</string>
+    <string name="reset_button">Reset</string>
+    <string name="edit_text_hint">Your answer</string>
+    <string name="warning">You must answer all questions before submitting</string>
+    <string name="title_activity_learn_more">LearnMore</string>
+    <string name="title_activity_find_out_more">FindOutMore</string>
+    <string name="title_activity_tabbed_activityt">TabbedActivityt</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
+
+

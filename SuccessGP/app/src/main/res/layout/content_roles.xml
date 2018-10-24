@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Roles"
+    tools:showIn="@layout/activity_roles">
+
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="four"
+        android:layout_marginTop="30dp"
+        app:spb_checkStateCompleted="true"
+        app:spb_stateBackgroundColor="#BDBDBD"
+        app:spb_stateForegroundColor="#28a2ff"
+        app:spb_stateNumberBackgroundColor="#516176"
+        app:spb_stateNumberForegroundColor="#eeeeee"
+        app:spb_currentStateDescriptionColor="#2ec0ff"
+        app:spb_stateDescriptionColor="#516176" />
+    />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="664dp"
+        android:layout_height="664dp"
+        android:background="@drawable/locationss"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        tools:layout_editor_absoluteY="113dp"
+        tools:ignore="MissingConstraints">
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".FindOutMore">
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="235dp"
+            android:layout_gravity="top"
+            android:background="@drawable/homee"
+            android:scaleType="fitXY" />
+
+        <com.kofigyan.stateprogressbar.StateProgressBar
+            android:id="@+id/state_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:spb_currentStateNumber="two"
+            app:spb_maxStateNumber="four"
+            app:spb_animateToCurrentProgressState="true"
+            app:spb_checkStateCompleted="true"
+            app:spb_stateBackgroundColor="#c8e6ff"
+            app:spb_stateForegroundColor="#28a2ff"
+            app:spb_stateNumberBackgroundColor="#516176"
+            app:spb_stateNumberForegroundColor="#eeeeee"
+            app:spb_currentStateDescriptionColor="#287aff"
+            app:spb_stateDescriptionColor="#516176" />
+        />
+
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/apps_card"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        card_view:cardCornerRadius="4dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Locations Across EMEA"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:fontFamily="@font/sintony" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="950px"
+                android:layout_height="950px"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/locationss" />
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/the_bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/current_step_default"
+                app:background="@color/questionColorDark"
+                app:itemIconTint="@color/colorPrimary"
+                app:itemTextColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:menu="@menu/bottom_navigation_main" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+</LinearLayout>

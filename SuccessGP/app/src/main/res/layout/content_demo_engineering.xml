@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/state_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="four"
+        app:spb_checkStateCompleted="true"
+        app:spb_stateBackgroundColor="#BDBDBD"
+        app:spb_stateForegroundColor="#28a2ff"
+        app:spb_stateNumberBackgroundColor="#516176"
+        app:spb_stateNumberForegroundColor="#eeeeee"
+        app:spb_currentStateDescriptionColor="#2ec0ff"
+        app:spb_stateDescriptionColor="#516176" />
+    />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.example.ahealy.successgp.DemoEngineering">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="218dp"
+                android:layout_marginEnd="227dp"
+                android:layout_marginRight="227dp"
+                android:layout_marginBottom="70dp"
+                android:text="Based on your results, we think you'd fit right in as a "
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="238dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="203dp"
+                android:layout_marginLeft="203dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="159dp"
+                android:layout_marginRight="159dp"
+                android:layout_marginBottom="62dp"
+                android:text="Demo Engineer"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="40sp"
+                app:fontFamily="cursive"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="540dp"
+                android:layout_height="126dp"
+                android:layout_marginStart="107dp"
+                android:layout_marginLeft="107dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginRight="68dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Your technical expertise have shaped you into a knowledgeable professional who is excited to embrace new technologies. You're looking for more than a developer role. Sound about right? Why not apply to our unique Demo Engineering role by clicking the link below and start blazing your trail towards being a member of the Salesforce Ohana! "
+                android:textSize="16sp"
+                app:fontFamily="@font/sintony"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="245dp"
+                android:layout_marginLeft="245dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="245dp"
+                android:layout_marginRight="245dp"
+                android:layout_marginBottom="182dp"
+                android:background="@android:color/background_light"
+                android:text="Apply Now"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/the_bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</android.support.constraint.ConstraintLayout>
+
